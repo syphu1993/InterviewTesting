@@ -1,0 +1,48 @@
+@import "../../global.scss";
+
+.language {
+  width: 100px;
+  height: 34px;
+  border-radius: 12px;
+  padding: 4px 8px;
+  background-color: #e8e8e8;
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  width: 140px;
+  border-radius: 8px;
+  padding: 12px 8px;
+  background-color: #e8e8e8;
+  gap: 8px;
+  top: 80px;
+  z-index: 2;
+  .item-language {
+    width: 100%;
+    height: 29;
+    gap: 8px;
+    cursor: pointer;
+  }
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 480px) {
+  .icon-expand {
+    width: 20px;
+    height: 8px;
+    margin-left: 24px;
+  }
+
+  .dropdown-menu {
+    top: 68px;
+  }
+}

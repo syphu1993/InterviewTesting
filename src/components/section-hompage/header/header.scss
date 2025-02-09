@@ -1,0 +1,38 @@
+@import "../../../variables.scss";
+@import "../../../global.scss";
+
+.container-header {
+  @extend .flex-row;
+  align-items: center;
+  justify-content: space-between;
+  .icon-arrow {
+    width: 32px;
+    height: 32px;
+    margin-right: 80px;
+  }
+  .text-brand {
+    @extend .medium-title;
+    font-size: 20px;
+  }
+  .menu {
+    width: 60%;
+    @extend .flex-row;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      font-weight: 250;
+    }
+    .dot {
+      color: rgba(0, 0, 0, 0.5);
+      margin: 0 5px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .icon-arrow {
+      width: 24px;
+      height: 24px;
+      margin-right: 6px;
+    }
+  }
+}

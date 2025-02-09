@@ -1,0 +1,88 @@
+@import "./variables.scss";
+
+body {
+  background-color: $main-bgr;
+  font-size: 22px;
+  line-height: 26px;
+  @media screen and (max-width: 480px) {
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.large-title {
+  font-family: $font-inter;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57px;
+  @media screen and (max-width: 480px) {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+  }
+}
+
+.medium-title {
+  @extend .large-title;
+  font-size: 34px;
+  line-height: 40px;
+}
+
+.small-text {
+  font-family: $font-inter;
+  font-size: 16px;
+  font-weight: 400;
+  list-style: 22px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.item-start {
+  align-items: start;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-25 {
+  width: 25%;
+}
+@media screen and (max-width: 480px) {
+  // hidden element on mobile
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  // hidden element on destop
+  .hidden-lg {
+    display: none !important;
+  }
+}

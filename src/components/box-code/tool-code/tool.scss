@@ -1,0 +1,29 @@
+.tool-code {
+    width: 58px;
+    height: 100%;
+    border-radius: 3px;
+    padding: 24px 16px;
+    gap: 8px;
+    .list-tools {
+        gap: 8px;
+        .icon-tool {
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .tool-code {
+        width: 32px;
+        padding: 16px 8px;
+        .list-tools {
+            gap: 6px;
+            .icon-tool {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+@import "../../variables.scss";
+@import "../../global.scss";
+
+.box-code {
+  width: 520px;
+  height: 350px;
+  bottom: 140px;
+  left: -120px;
+  border-radius: 12.32px;
+  background-color: $white-bgr;
+  padding: 32px 24px;
+  gap: 40px;
+  z-index: 2;
+  box-shadow: 0px 4px 57px 0px #00000026;
+}
+
+.code {
+  font-family: $font-code;
+  font-size: 14px;
+  font-weight: 250;
+  line-height: 18.68px;
+  letter-spacing: 0%;
+  text-align: start;
+}
+
+.code-comment {
+  color: lightpink;
+}
+
+.code-function {
+  color: lightblue;
+}
+
+.code-if {
+  color: lightblue;
+}
+
+@media screen and (max-width: 480px) {
+  .box-code {
+    width: 275px;
+    height: 186px;
+    bottom: 80px;
+    left: 14px;
+    border-radius: 6px;
+    padding: 12px 16px;
+    gap: 20px;
+  }
+  .code {
+    font-size: 8px;
+    font-weight: 250;
+    line-height: 12px;
+    width: auto !important;
+  }
+}
