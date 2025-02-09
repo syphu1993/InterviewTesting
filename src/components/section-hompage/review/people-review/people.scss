@@ -1,0 +1,50 @@
+@use "../../../../variables.scss";
+
+.container-people {
+  width: 520px;
+  height: 490px;
+  border-radius: 12px;
+  background: variables.$dark-bgr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .sub-image {
+    width: 476px;
+    height: 570px;
+    border-radius: 12px;
+    background: variables.$yellow-light;
+    margin-top: 126px;
+    position: relative;
+    padding: 26px;
+    p {
+      opacity: 0.2;
+    }
+    img {
+      position: absolute;
+      width: 360px;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+    .container-people {
+        width: 100%;
+        height: 320px;
+        margin-top: 40px;
+        .sub-image {
+          width: 90%;
+          height: 377px;
+          margin-top: 90px;
+          padding: 26px;
+          p {
+            opacity: 0.2;
+            font-size: 32px;
+          }
+          img {
+            width: 70%;
+          } 
+        }
+      }
+}

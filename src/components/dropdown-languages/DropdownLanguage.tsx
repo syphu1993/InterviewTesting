@@ -5,13 +5,9 @@ import iconLineArrow from "../../assets/icons/linear-arrow.png";
 import iconExpand from "../../assets/icons/icon-expand-menu.png";
 
 import React, { useState, useEffect, useRef } from "react";
+import { Language } from "../../model/Language";
 
-interface Language {
-  id: number;
-  icon: string;
-  name: string;
-  shortName: string;
-}
+
 
 const DropdownLanguages: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);

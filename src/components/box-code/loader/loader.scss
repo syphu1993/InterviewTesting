@@ -1,8 +1,7 @@
-@import "../../../variables.scss";
-@import "../../../global.scss";
+@use "../../../variables.scss";
 
 .loader {
-  background-color: $main-bgr;
+  background-color: variables.$main-bgr;
   width: 100%;
   height: 26px;
   border-radius: 40px;

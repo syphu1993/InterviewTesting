@@ -4,11 +4,8 @@ import ToolCode from "./tool-code/ToolCode";
 import iconFile from "../../assets/icons/file.png";
 import iconShare from "../../assets/icons/share.png";
 import iconSearch from "../../assets/icons/search.png";
-
-interface LineLoader {
-  id: number;
-  width: string | number; 
-}
+import { IconTool } from "../../model/IconTool";
+import { LineLoader } from "../../model/LineLoader.";
 
 interface BoxCodeProps {
   contentCode: string;
@@ -25,7 +22,7 @@ const BoxCode: React.FC<BoxCodeProps> = ({
   position,
   backgroundTool,
 }) => {
-  const listIconTool = [
+  const listIconTool: IconTool[] = [
     { id: 1, src: iconFile },
     { id: 2, src: iconSearch },
     { id: 3, src: iconShare },

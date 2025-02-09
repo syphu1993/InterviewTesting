@@ -1,0 +1,66 @@
+@import "../../../variables.scss";
+
+.container-description {
+  width: 100%;
+  height: auto;
+  padding: 160px 110px 160px 127px;
+  background-color: $white-bgr;
+  .cover-box {
+    position: relative;
+    .cover-img {
+      position: absolute;
+      right: -120px;
+      top: 88px;
+      img {
+        width: 195px;
+        height: auto;
+      }
+    }
+  }
+  .content {
+    width: 40%;
+    text-align: start;
+    p {
+      margin-bottom: 36px;
+    }
+    span {
+      font-weight: 250;
+    }
+    div {
+      margin-top: 26px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+    .container-description {
+        flex-direction: column-reverse;
+        flex-wrap: wrap-reverse;
+        padding: 32px 22px;
+        .cover-box {
+          position: relative;
+          .box-code {
+            width: 100% !important;
+          }
+          .cover-img {
+            right: -16px;
+            top: 132px;
+            img {
+              width: 100px;
+            }
+          }
+        }
+        .content {
+          width: 100%;
+          p {
+            margin-bottom: 20px;
+          }
+          span {
+            font-weight: 250;
+          }
+          div {
+            margin-bottom: 20px;
+          }
+        }
+      }
+}

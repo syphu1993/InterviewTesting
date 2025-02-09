@@ -1,7 +1,7 @@
-@import "./variables.scss";
+@use "./variables.scss";
 
 body {
-  background-color: $main-bgr;
+  background-color: variables.$main-bgr;
   font-size: 22px;
   line-height: 26px;
   @media screen and (max-width: 480px) {
@@ -12,7 +12,7 @@ body {
 }
 
 .large-title {
-  font-family: $font-inter;
+  font-family: variables.$font-inter;
   font-weight: 700;
   font-size: 48px;
   line-height: 57px;
@@ -30,7 +30,7 @@ body {
 }
 
 .small-text {
-  font-family: $font-inter;
+  font-family: variables.$font-inter;
   font-size: 16px;
   font-weight: 400;
   list-style: 22px;

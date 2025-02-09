@@ -1,0 +1,22 @@
+@import "../../../variables.scss";
+
+.container-about {
+  height: 282px;
+  width: 100%;
+  background-color: $white-bgr;
+  padding: 80px 132px;
+  img {
+    width: 280px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container-about {
+    height: 192px;
+    padding: 80px 24px;
+    img {
+      width: 80px;
+    }
+  }
+}
