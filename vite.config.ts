@@ -24,4 +24,11 @@ export default defineConfig({
       },
     }),
   ],
+  build: {
+    ssr: true,
+    outDir: 'dist/ssr',
+  },
+  server: {
+    port: 5173,
+  },
 })

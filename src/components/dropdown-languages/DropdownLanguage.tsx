@@ -7,8 +7,6 @@ import iconExpand from "../../assets/icons/icon-expand-menu.png";
 import React, { useState, useEffect, useRef } from "react";
 import { Language } from "../../model/Language";
 
-
-
 const DropdownLanguages: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [language, setLanguage] = useState<Language>({
@@ -34,7 +32,10 @@ const DropdownLanguages: React.FC = () => {
     },
   ];
 
-  const handleOptionClick = (event: React.MouseEvent<HTMLDivElement>, language: Language) => {
+  const handleOptionClick = (
+    event: React.MouseEvent<HTMLDivElement>,
+    language: Language
+  ) => {
     event.stopPropagation();
     setLanguage(language);
     setIsOpen(false);
@@ -46,7 +47,10 @@ const DropdownLanguages: React.FC = () => {
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(e.target as Node)
+      ) {
         setIsOpen(false);
       }
     };
@@ -58,8 +62,11 @@ const DropdownLanguages: React.FC = () => {
   }, []);
 
   return (
-    <div onClick={openDropdown} className="flex-row item-center" ref={dropdownRef}>
-      <div className="language flex-row item-center space-between">
+    <div className="flex-row item-center" ref={dropdownRef}>
+      <div
+        onClick={openDropdown}
+        className="language flex-row item-center space-between"
+      >
         <img width={20} height={20} src={language.icon} alt="" />
         <span>{language.shortName}</span>
         <img
@@ -79,12 +86,7 @@ const DropdownLanguages: React.FC = () => {
               onClick={(event) => handleOptionClick(event, lang)}
               key={lang.id}
             >
-              <img
-                width={20}
-                height={20}
-                src={lang.icon}
-                alt={lang.name}
-              />
+              <img width={20} height={20} src={lang.icon} alt={lang.name} />
               <span className="small-text">
                 {lang.name.toLocaleUpperCase()}
               </span>

@@ -1,0 +1,81 @@
+@use "./../../../variables.scss";
+
+.container-product {
+  height: 1000px;
+  background-color: variables.$white-bgr;
+  padding: 260px 92px;
+  text-align: center;
+  .short-title {
+    width: 100%;
+    margin: 32px 0;
+    font-weight: 250;
+  }
+  .item-product {
+    width: 32%;
+    border-radius: 10px;
+    padding: 50px;
+    .name {
+      font-size: 24px;
+    }
+
+    .modules {
+      font-weight: 250;
+    }
+  }
+
+  .item-product-nomal {
+    height: 488px;
+    background: variables.$main-bgr;
+  }
+
+  .item-product-new {
+    height: 548px;
+    background: variables.$dark-bgr;
+  }
+}
+
+.color-light {
+  color: variables.$white-bgr;
+}
+
+@media screen and (max-width: 480px) {
+  .container-product {
+    height: auto;
+    padding: 120px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .cover-box {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .large-title {
+        width: 60%;
+    }
+    .short-title {
+        width: 60%;
+        margin: 16px 0;
+    }
+    .item-product {
+      width: 100%;
+      border-radius: 10px;
+      padding: 32px;
+      align-items: center;
+      .name {
+        font-size: 22px;
+      }
+      .modules {
+        font-size: 18px;
+      }
+    }
+
+    .item-product-nomal {
+      height: 424px;
+    }
+
+    .item-product-new {
+      height: 578px;
+    }
+  }
+}

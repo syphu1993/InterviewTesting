@@ -81,8 +81,8 @@
 }
 
 .dot {
-  width: 10px;
-  height: 10px;
+  width: 30px;
+  height: 8px;
   margin: 0 5px;
   background-color: #CFCFCF;
   cursor: pointer;
@@ -91,5 +91,5 @@
 
 .dot.active {
   background-color: variables.$yellow-light;
-  width: 30px;
+  width: 60px;
 }

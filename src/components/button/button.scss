@@ -3,6 +3,10 @@
   height: 20px;
 }
 
+button {
+  border-color: transparent;
+}
+
 @media screen and (max-width: 480px) {
   .icon-button {
     width: 16px;

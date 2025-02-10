@@ -4,6 +4,7 @@ import Description from '../../components/section-hompage/description/Descriptio
 import About from '../../components/section-hompage/about/About';
 import Review from '../../components/section-hompage/review/Review';
 import Feature from '../../components/section-hompage/feature/Feature';
+import Product from '../../components/section-hompage/production/Production';
 
 const HomePage: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage: React.FC = () => {
         <Feature />
         <Description />
         <Review />
+        <Product />
     </div>
   );
 };
