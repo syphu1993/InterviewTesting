@@ -3,6 +3,7 @@ import "./description.scss";
 import imgTriangle from "../../../assets/images/icon-park.png";
 import Button from "../../button/Button";
 import { LineLoader } from "../../../model/LineLoader.";
+import MyImage from "../../my-image/MyImage";
 
 const Description: React.FC = () => {
   const contentCode = `
@@ -36,8 +37,8 @@ const Description: React.FC = () => {
           listLineLoaders={listLoaders}
         />
         <div className="cover-img">
-          <img src={imgTriangle} alt="Triangle decoration" />
-        </div>
+           <MyImage src={imgTriangle}  alt={"Triangle decoration"}/>
+        </div>  
       </div>
 
       <div className="content">

@@ -1,10 +1,10 @@
-@import "../../../variables.scss";
+@use "../../../variables.scss";
 
 .container-description {
   width: 100%;
   height: auto;
   padding: 160px 110px 160px 127px;
-  background-color: $white-bgr;
+  background-color: variables.$white-bgr;
   .cover-box {
     position: relative;
     .cover-img {

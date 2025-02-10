@@ -3,6 +3,7 @@ import imageFirstAbout from "../../../assets/images/first-about.png";
 import imageSecondAbout from "../../../assets/images/second-about.png";
 import imageThirdAbout from "../../../assets/images/third-about.png";
 import { IconTool } from "../../../model/IconTool";
+import MyImage from "../../my-image/MyImage";
 
 const About: React.FC = () => {
   const listLogo: IconTool[] = [
@@ -23,7 +24,7 @@ const About: React.FC = () => {
   return (
     <div className="container-about flex-row item-center space-between">
       {listLogo.map((item) => (
-        <img key={item.id} src={item.src} alt={`About image ${item.id}`} />
+        <MyImage key={item.id} src={item.src} alt={`About image ${item.id}`} />
       ))}
     </div>
   );

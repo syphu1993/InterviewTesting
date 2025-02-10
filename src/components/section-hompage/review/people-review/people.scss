@@ -19,10 +19,10 @@
     p {
       opacity: 0.2;
     }
-    img {
+    .img-red-man {
       position: absolute;
       width: 360px;
-      bottom: 0;
+      bottom: -5px;
       right: 0;
     }
   }
@@ -42,7 +42,7 @@
             opacity: 0.2;
             font-size: 32px;
           }
-          img {
+          .img-red-man {
             width: 70%;
           } 
         }

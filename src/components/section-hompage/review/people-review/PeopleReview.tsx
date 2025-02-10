@@ -1,5 +1,6 @@
 import "./people.scss";
 import imageRedMan from "../../../../assets/images/red-man.png";
+import MyImage from "../../../my-image/MyImage";
 
 const PeopleReview: React.FC = () => {
   return (
@@ -9,7 +10,7 @@ const PeopleReview: React.FC = () => {
           <p>TUTORS</p>
           <p>Anthoney Mills</p>
         </div>
-        <img src={imageRedMan} alt="" />
+        <MyImage className={'img-red-man'} src={imageRedMan} alt="RedMan"/>
       </div>
     </div>
   );

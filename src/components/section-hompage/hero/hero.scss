@@ -1,5 +1,5 @@
-@import "./../../../variables.scss";
-@import "./../../../global.scss";
+@use "./../../../variables.scss";
+@use "./../../../global.scss";
 
 .hero-section {
   @extend .flex-row;
@@ -12,7 +12,7 @@
       padding: 85px 0;
       height: 100%;
       .slogan {
-        font-family: $font-code;
+        font-family: variables.$font-code;
         font-size: 60px;
         font-weight: 600;
         line-height: 75px;
@@ -21,7 +21,7 @@
 
       .description-hero {
         @extend .small-text;
-        font-family: $font-code;
+        font-family: variables.$font-code;
         text-align: start;
         width: 60%;
         .icon-logo {
@@ -34,7 +34,7 @@
 
   .hero-right {
     width: 50%;
-    background-color: $dark-bgr;
+    background-color: variables.$dark-bgr;
     position: relative;
     .img-common {
       position: absolute;
@@ -43,7 +43,7 @@
     .img-man {
       @extend .img-common;
       width: 60%;
-      bottom: 0;
+      bottom: -5px;
       right: 48px;
       z-index: 3;
     }
@@ -73,6 +73,7 @@
       color: white;
       gap: 12px;
       img {
+        margin-top: 5px;
         width: 30px;
         height: 30px;
       }
@@ -91,7 +92,7 @@
       .content-left {
         padding: 40px 0;
         .slogan {
-          font-family: $font-inter;
+          font-family: variables.$font-inter;
           font-size: 34px;
           line-height: 40px;
           font-weight: 400;

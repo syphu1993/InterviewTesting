@@ -2,6 +2,7 @@ import Button from "../../../button/Button";
 import Header from "../../header/Header";
 import iconCode from "../../../../assets/icons/icon-code.png";
 import iconLogo from "../../../../assets/images/logo-hero.png";
+import MyImage from "../../../my-image/MyImage";
 
 const LeftContent: React.FC = () => {
   return (
@@ -18,7 +19,7 @@ const LeftContent: React.FC = () => {
           with coding
         </div>
         <div className="description-hero flex-column item-start">
-          <img className="icon-logo" src={iconLogo} alt="Logo" />
+          <MyImage src={iconLogo} alt={"Logo"} className={"icon-logo"}/>
           <span>
             Create, launch, and iterate on new marketing campaigns without
             distracting your product team.

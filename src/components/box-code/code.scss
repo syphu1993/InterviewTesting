@@ -1,4 +1,4 @@
-@import "../../variables.scss";
+@use "../../variables.scss";
 
 .box-code {
   width: 520px;
@@ -6,7 +6,7 @@
   bottom: 140px;
   left: -120px;
   border-radius: 12.32px;
-  background-color: $white-bgr;
+  background-color: variables.$white-bgr;
   padding: 32px 24px;
   gap: 40px;
   z-index: 2;
@@ -14,7 +14,7 @@
 }
 
 .code {
-  font-family: $font-code;
+  font-family: variables.$font-code;
   font-size: 14px;
   font-weight: 250;
   line-height: 18.68px;

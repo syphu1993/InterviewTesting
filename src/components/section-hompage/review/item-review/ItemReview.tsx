@@ -1,3 +1,4 @@
+import MyImage from "../../../my-image/MyImage";
 import "./item.scss";
 
 interface ItemReviewProps {
@@ -9,7 +10,7 @@ interface ItemReviewProps {
 const ItemReview: React.FC<ItemReviewProps> = ({ icon, title, content }) => {
   return (
     <div className="container-item flex-column item-start space-between">
-      <img src={icon} alt={title} />
+      <MyImage src={icon} alt={title} />
       <div>
         <p className="medium-title title">{title}</p>
         <p className="small-text">{content}</p>

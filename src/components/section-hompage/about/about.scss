@@ -1,9 +1,9 @@
-@import "../../../variables.scss";
+@use "../../../variables.scss";
 
 .container-about {
   height: 282px;
   width: 100%;
-  background-color: $white-bgr;
+  background-color: variables.$white-bgr;
   padding: 80px 132px;
   img {
     width: 280px;
