@@ -1,0 +1,68 @@
+@use "./../../../variables.scss";
+
+.container-qa {
+  background-color: variables.$white-bgr;
+  padding: 60px 50px;
+  .answer {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .icon-show {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 34px;
+    font-weight: 700;
+  }
+
+  .expand {
+    @extend .icon-show;
+    background-color: variables.$white-bgr;
+    border: 1px solid variables.$dark-bgr;
+    color: variables.$yellow-light;
+  }
+
+  .hidden {
+    @extend .icon-show;
+    background-color: variables.$yellow-light;
+    color: variables.$white-bgr;
+  }
+
+  .box-question {
+    margin-top: 40px;
+  }
+}
+hr {
+  border: none;
+  height: 2px;
+  background-color: variables.$main-bgr;
+  margin: 40px 0;
+}
+
+@media screen and (max-width: 480px) {
+  .container-qa {
+    background-color: variables.$white-bgr;
+    padding: 0px 16px;
+    .answer {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    .medium-title {
+      font-size: 22px;
+      line-height: 24px;
+    }
+
+    .icon-show {
+      width: 32px;
+      height: 32px;
+      font-size: 23px;
+      font-weight: 600;
+    }
+    .box-question {
+      margin-top: 20px;
+    }
+  }
+}
