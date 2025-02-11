@@ -2,6 +2,7 @@ import "./languages.scss";
 import iconLanguageEn from "../../assets/icons/icon-english.png";
 import iconLanguageVn from "../../assets/icons/icon-vn.png";
 import iconLineArrow from "../../assets/icons/linear-arrow.png";
+import { LanguageKey } from "../../constant/language";
 
 import React, { useState, useEffect, useRef } from "react";
 import { Language } from "../../model/Language";
@@ -12,7 +13,7 @@ const DropdownLanguages: React.FC = () => {
     id: 1,
     icon: iconLanguageEn,
     name: "ENLISH",
-    shortName: "EN",
+    shortName: LanguageKey.EN,
   });
   const dropdownRef = useRef<HTMLDivElement | null>(null);
 
@@ -21,13 +22,13 @@ const DropdownLanguages: React.FC = () => {
       id: 1,
       icon: iconLanguageEn,
       name: "ENLISH",
-      shortName: "EN",
+      shortName: LanguageKey.EN,
     },
     {
       id: 2,
       icon: iconLanguageVn,
       name: "VIET NAM",
-      shortName: "VN",
+      shortName: LanguageKey.VN,
     },
   ];
 
