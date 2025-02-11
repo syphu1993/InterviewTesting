@@ -10,6 +10,7 @@ import Footer from '../../components/section-hompage/footer/Footer';
 import "./home.scss";
 import iconScroll from "../../assets/icons/backtop-top.png";
 import MyImage from '../../components/my-image/MyImage';
+import { Helmet } from 'react-helmet';
 
 const HomePage: React.FC = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -38,6 +39,15 @@ const HomePage: React.FC = () => {
   };
   return (
     <div>
+      {/* SEO for page*/}
+      <Helmet>
+        <title>Home Page - My Website</title>
+        <meta name="description" content="Welcome to the home page of My Website. Discover features, products, and more!" />
+        <meta name="keywords" content="home, features, products, React" />
+        <meta name="author" content="Your Name or Your Company" />
+        <link rel="canonical" href="https://www.yourwebsite.com/home" />
+      </Helmet>
+
       <Hero />
       <About />
       <Feature />
@@ -46,6 +56,7 @@ const HomePage: React.FC = () => {
       <Product />
       <QuestionAnswer />
       <Footer />
+      
       {/* Icon Scroll to Top */}
       {showScrollTop && (
         <div className="scroll-top" onClick={scrollToTop}>
