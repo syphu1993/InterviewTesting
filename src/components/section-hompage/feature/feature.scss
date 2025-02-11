@@ -17,6 +17,7 @@
         border-radius: 14px;
         padding: 32px;
         text-align: start;
+        cursor: pointer;
 
         @media screen and (max-width: 480px) {
             padding: 24px;
@@ -34,5 +35,9 @@
                 height: 40px;
             }
         }
+    }
+
+    .item-feature:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 }

@@ -1,0 +1,20 @@
+.scroll-top {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 46px;
+    }
+  }
+  
+  .scroll-top:active {
+    transform: scale(0.95);
+  }
+  

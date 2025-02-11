@@ -89,6 +89,16 @@ body {
 .w-25 {
   width: 25%;
 }
+
+
+.gap-20 {
+  gap: 20px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 480px) {
   // hidden element on mobile
   .hidden-sm {

@@ -9,6 +9,11 @@
   position: relative;
 }
 
+.language:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
 .dropdown-menu {
   position: absolute;
   width: 140px;

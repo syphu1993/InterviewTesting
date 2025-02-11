@@ -14,7 +14,7 @@ const Header: React.FC = () => {
     setIsMenuVisible(!isMenuVisible);
   };
   listItem.forEach((item, index) => {
-    menuItems.push(<span key={`item-${index}`}>{item}</span>);
+    menuItems.push(<span className="pointer text-menu-header" key={`item-${index}`}>{item}</span>);
     if (index < listItem.length - 1) {
       menuItems.push(
         <span key={`dot-${index}`} className="dot">
@@ -27,7 +27,7 @@ const Header: React.FC = () => {
   return (
     <div className="container-header">
       <div className="flex-row item-center">
-        <img className="icon-arrow" src={iconArrow} alt="" />
+        <img className="icon-arrow pointer" src={iconArrow} alt="" />
         <div className="text-brand hidden-lg">macode.</div>
       </div>
       <div className="menu hidden-sm">{menuItems}</div>

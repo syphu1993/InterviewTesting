@@ -25,6 +25,10 @@
       color: rgba(0, 0, 0, 0.5);
       margin: 0 5px;
     }
+
+    .text-menu-header:hover {
+      font-weight: 700;
+    }
   }
 
   @media screen and (max-width: 480px) {

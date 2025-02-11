@@ -2,16 +2,16 @@ import iconVector from "../../assets/icons/vector-btn.png";
 import "./button.scss";
 
 interface ButtonProps {
-  width?: string | number;
+  width: string | number;
   height: number;
-  radius: number;
-  background: string;
+  radius?: number;
+  background?: string;
   content: string;
   isIcon?: boolean;
-  paddingX: number;
-  paddingY: number;
-  fontSize: number;
-  color: string;
+  paddingX?: number;
+  paddingY?: number;
+  fontSize?: number;
+  color?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -23,12 +23,14 @@ const Button: React.FC<ButtonProps> = ({
   isIcon,
   paddingX,
   paddingY,
-  fontSize,
+  fontSize=22,
   color,
 }) => {
+
+  const classBtn: string = "btn flex-row item-center space-between"
   return (
     <button
-      className="btn flex-row item-center space-between"
+      className= {isIcon ? classBtn : `${classBtn} content-center`} 
       style={{
         width: width,
         height: `${height}px`,

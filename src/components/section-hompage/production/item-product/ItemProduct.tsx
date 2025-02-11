@@ -18,7 +18,7 @@ const ItemProduct: React.FC<ProductProps> = ({
     ? "item-product-new color-light"
     : "item-product-nomal";
   return (
-    <div className={`item-product flex-column space-between ${productClass}`}>
+    <div className={`item-product flex-column item-center space-between ${productClass}`}>
       {isNew && <div className="cover-new">
         <MyImage src={imageNew} className={'img-new'}/>
       </div>}
@@ -34,9 +34,9 @@ const ItemProduct: React.FC<ProductProps> = ({
           </p>
         ))}
       </div>
-      <div className="hidden-sm">
+      <div className="hidden-sm w-100">
         <Button
-          width={306}
+          width={'100%'}
           height={56}
           radius={10}
           paddingX={108}
@@ -47,9 +47,9 @@ const ItemProduct: React.FC<ProductProps> = ({
           fontSize={22}
         />
       </div>
-      <div className="hidden-lg">
+      <div className="hidden-lg w-100">
         <Button
-          width={267}
+          width={'100%'}
           height={50}
           radius={10}
           paddingX={90}

@@ -5,7 +5,13 @@
 
 button {
   border-color: transparent;
+  cursor: pointer;
 }
+
+button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
 
 @media screen and (max-width: 480px) {
   .icon-button {
