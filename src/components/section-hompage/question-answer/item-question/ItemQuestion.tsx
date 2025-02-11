@@ -16,7 +16,7 @@ const ItemQuestion: React.FC<ItemQuestionProps> = ({
     setIsOpen(!isOpen);
   };
   return (
-    <div className="qa-item">
+    <div className="qa-item flex-column gap-10">
       <div className="flex-row item-start space-between">
         <p className="medium-title w-75">
           {id}. {question}
@@ -30,10 +30,11 @@ const ItemQuestion: React.FC<ItemQuestionProps> = ({
           </div>
         ) : (
           <div
+            style={{transform: 'rotate(-90deg)'}}
             className="hidden flex item-center content-center"
             onClick={toggleAnswer}
           >
-            -
+            I
           </div>
         )}
       </div>
