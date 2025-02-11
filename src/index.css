@@ -1,9 +1,18 @@
+@font-face {
+  font-family: 'Aeonik';
+  src: url('./assets/fonts/AeonikTRIAL-Regular.otf') format('opentype'),;
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Aeonik', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
 
 * {
   box-sizing: border-box;

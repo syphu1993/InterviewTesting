@@ -1,9 +1,12 @@
 import "./header.scss";
-import iconArrow from "../../../assets/icons/icon-header.png";
+import iconArrowDesk from "../../../assets/icons/icon-header.png";
+import iconArrowMobile from "../../../assets/icons/icon-header-mb.png";
+
 import DropdownLanguages from "../../dropdown-languages/DropdownLanguage";
 import { JSX, useState } from "react";
 import MenuOverlay from "../../menu-overlay/MenuOverlay";
 import iconExpand from "../../../assets/icons/icon-expand-menu.png";
+import MyImage from "../../my-image/MyImage";
 
 const Header: React.FC = () => {
   const listItem: string[] = ["Tutorials", "Case studies", "Resources"];
@@ -24,10 +27,13 @@ const Header: React.FC = () => {
     }
   });
 
+  const srcSet = `${iconArrowMobile} 500w, ${iconArrowDesk} 2000w`
+  const size = `(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw`
+
   return (
     <div className="container-header">
       <div className="flex-row item-center">
-        <img className="icon-arrow pointer" src={iconArrow} alt="" />
+        <MyImage srcSet={srcSet} className={'icon-arrow pointer'} size={size} />
         <div className="text-brand hidden-lg">macode.</div>
       </div>
       <div className="menu hidden-sm">{menuItems}</div>
