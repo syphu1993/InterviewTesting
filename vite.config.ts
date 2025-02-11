@@ -1,34 +1,9 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import viteImagemin from 'vite-plugin-imagemin';
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  plugins: [react(),
-    viteImagemin({
-      webp: {
-        quality: 75, 
-      },
-      mozjpeg: {
-        quality: 85,
-      },
-      pngquant: {
-        quality: [0.65, 0.9],
-        speed: 4,
-      },
-      optipng: {
-        optimizationLevel: 7,
-      },
-      gifsicle: {
-        optimizationLevel: 3,
-        interlaced: false,
-      },
-    }),
-  ],
+  plugins: [react()],
   build: {
-    ssr: true,
-    outDir: 'dist/ssr',
+    ssr: 'src/entry-server.tsx',  // Entry point cho server-side rendering
   },
-  server: {
-    port: 5173,
-  },
-})
+});
