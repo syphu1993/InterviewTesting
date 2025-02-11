@@ -5,15 +5,19 @@
   background-color: variables.$white-bgr;
   padding: 260px 92px;
   text-align: center;
+
   .short-title {
     width: 100%;
     margin: 32px 0;
     font-weight: 250;
   }
+
   .item-product {
+    position: relative;
     width: 32%;
     border-radius: 10px;
     padding: 50px;
+
     .name {
       font-size: 24px;
     }
@@ -21,6 +25,14 @@
     .modules {
       font-weight: 250;
     }
+
+    .cover-new {
+      position: absolute;
+      left: 60px;
+      top: 100px;
+      width: 40px;
+    }
+
   }
 
   .item-product-nomal {
@@ -46,25 +58,31 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     .cover-box {
       flex-direction: column;
       gap: 20px;
     }
+
     .large-title {
-        width: 60%;
+      width: 60%;
     }
+
     .short-title {
-        width: 60%;
-        margin: 16px 0;
+      width: 60%;
+      margin: 16px 0;
     }
+
     .item-product {
       width: 100%;
       border-radius: 10px;
       padding: 32px;
       align-items: center;
+
       .name {
         font-size: 22px;
       }
+
       .modules {
         font-size: 18px;
       }

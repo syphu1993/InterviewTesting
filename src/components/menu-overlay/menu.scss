@@ -1,0 +1,49 @@
+.menu-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    .menu-bar {
+        height: 4px;
+        background-color: #000;
+        border-radius: 2px;
+    }
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 1000;
+    .cover-row {
+        margin-top: 40px;
+        gap: 32px;
+    }
+}
+
+.menu-content {
+    background-color: #fff;
+    width: 85%;
+    height: 100%;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    background: #000000DE;
+
+    .icon-close {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+}

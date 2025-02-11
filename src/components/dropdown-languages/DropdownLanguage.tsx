@@ -2,7 +2,6 @@ import "./languages.scss";
 import iconLanguageEn from "../../assets/icons/icon-english.png";
 import iconLanguageVn from "../../assets/icons/icon-vn.png";
 import iconLineArrow from "../../assets/icons/linear-arrow.png";
-import iconExpand from "../../assets/icons/icon-expand-menu.png";
 
 import React, { useState, useEffect, useRef } from "react";
 import { Language } from "../../model/Language";
@@ -77,7 +76,6 @@ const DropdownLanguages: React.FC = () => {
           className={`arrow ${isOpen ? "rotated" : ""}`}
         />
       </div>
-      <img className="hidden-lg icon-expand" src={iconExpand} alt="" />
       {isOpen && (
         <div className="dropdown-menu flex-column">
           {listLanguage.map((lang) => (

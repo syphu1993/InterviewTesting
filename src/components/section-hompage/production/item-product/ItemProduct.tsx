@@ -1,4 +1,6 @@
 import Button from "../../../button/Button";
+import MyImage from "../../../my-image/MyImage";
+import imageNew from "../../../../assets/images/new-image.png";
 
 interface ProductProps {
   name: string;
@@ -17,6 +19,9 @@ const ItemProduct: React.FC<ProductProps> = ({
     : "item-product-nomal";
   return (
     <div className={`item-product flex-column space-between ${productClass}`}>
+      {isNew && <div className="cover-new">
+        <MyImage src={imageNew} className={'img-new'}/>
+      </div>}
       <p className="name">{name}</p>
       <span className="large-title">
         <sup style={{ fontSize: "22px" }}>$</sup>

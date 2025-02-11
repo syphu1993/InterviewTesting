@@ -15,11 +15,33 @@
     height: 343px;
     width: 25%;
     padding-bottom: 32px;
+
     @media screen and (max-width: 480px) {
       height: auto;
       width: 100%;
     }
   }
+
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .dot {
+    width: 30px;
+    height: 8px;
+    margin: 0 5px;
+    background-color: #CFCFCF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .dot.active {
+    background-color: variables.$yellow-light;
+    width: 60px;
+  }
+
 }
 
 .carousel-items {
@@ -47,6 +69,7 @@
   @media screen and (max-width: 480px) {
     width: 100%;
   }
+
 }
 
 .carousel-btn {
@@ -72,24 +95,4 @@
     position: absolute;
     right: 10px;
   }
-}
-
-.carousel-dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.dot {
-  width: 30px;
-  height: 8px;
-  margin: 0 5px;
-  background-color: #CFCFCF;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.dot.active {
-  background-color: variables.$yellow-light;
-  width: 60px;
 }

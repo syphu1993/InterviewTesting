@@ -1,0 +1,16 @@
+@use "./../../../variables.scss";
+
+.container-row {
+    color: variables.$main-bgr;
+    .icon-menu-overlay {
+        width: 30px;
+        height: 30px;
+        margin-right: 16px;
+    }
+
+    .icon-arrow-menu {
+        width: 24px;
+        height: 24px;
+        transform: rotate(-90deg);
+    }
+}
