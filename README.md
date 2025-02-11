@@ -48,3 +48,18 @@ export default tseslint.config({
   },
 })
 ```
+# Run app
+<!-- run command line to clone source -->
+
+git clone https://github.com/syphu1993/InterviewTesting.git
+
+cd to `InterviewTesting` folder.
+
+<!-- run command line to set nodemodules -->
+npm install
+
+<!-- run command line to run app -->
+npm run dev
+
+<!-- run command line to build app -->
+npm run build
